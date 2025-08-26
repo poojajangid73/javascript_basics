@@ -79,3 +79,25 @@ console.log(Object.keys(tinder)) //[ 'id', 'name', 'isLoggedIn' ] .....array typ
 console.log(Object.entries(tinder)) //[ [ 'id', 'abc123' ], [ 'name', 'Sam' ], [ 'isLoggedIn', false ] ]
 
 console.log(tinder.hasOwnProperty('Name')) //false
+
+//=======de-structure the object and JSON API formate==========k
+const course = {
+    name : "javascript",
+    price : "999",
+    Instructure :"hitesh"
+}
+console.log(course.Instructure) //hitesh
+
+const{Instructure} = course
+console.log(Instructure) //hitesh
+
+//de structure the object :-
+const{price: pr} = course
+console.log(pr) //999
+
+//JSON formate(API)
+// {
+//    name : "pooja",
+//    class : "btech",
+//    section :"B"
+// }
