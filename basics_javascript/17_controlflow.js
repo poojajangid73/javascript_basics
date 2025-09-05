@@ -94,9 +94,10 @@ else{
 //truthy values====
 // "0" , 'false' , " " , [] , {} , function(){} , 
 
-if(userEmail.length === 0){
+ if(userEmail.length === 0){
     console.log("array is empty")
 }
+
 //false == 0  //true
 //false == ''  //true
 //0 == ''  //true
