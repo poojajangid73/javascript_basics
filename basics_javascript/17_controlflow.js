@@ -101,3 +101,24 @@ else{
 //false == 0  //true
 //false == ''  //true
 //0 == ''  //true
+
+//nullish coalescing operator (??)=============
+//depends on null and undefined'
+let value1;
+value1 = 5 ?? 10
+console.log(value1) //5
+value1 = null ?? 10
+console.log(value1) //10
+value1 = undefined ?? 10
+console.log(value1) //10
+value1 = undefined ?? null
+console.log(value1) //null
+value1 = null ?? undefined
+console.log(value1) //undefined
+value1 = null ?? 10 ??20
+console.log(value1) //10
+
+//terniary operator==========
+//condition ? true : false
+ const teaPrice = 100
+ teaPrice <= 80 ? console.log("less than 80") : console.log("more than 80") //more than 80
