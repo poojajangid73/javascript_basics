@@ -125,5 +125,5 @@ for(const key in myObj){
 }
 //for in loop is also applicable on array
 
-
+//...................
 //===========for each loop=======
