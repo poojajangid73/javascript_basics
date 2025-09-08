@@ -119,11 +119,45 @@ const myObj = {
     swift : "swift by apple"
 }
 for(const key in myObj){
-    console.log(key)
-    console.log(myObj[key])
-    console.log(`${key} is shortcut for ${myObj[key]}`)
+     console.log(key)
+     console.log(myObj[key])
+     console.log(`${key} is shortcut for ${myObj[key]}`)
 }
 //for in loop is also applicable on array
 
-//...................
 //===========for each loop=======
+const coding = ["java" , "cpp" , "ruby" , "python" , "js" , "c"]
+// coding.forEach(function(value){
+//     console.log(value);
+// })
+// //using forEach function by arrow function
+// coding.forEach((item) => {
+//     console.log(item)
+// })
+
+coding.forEach((item,index,array) => {
+    console.log(item,index,array)
+})
+
+const language = [
+    {
+        languageName : "javascript",
+        shortName : "js"
+    },
+    {
+        languageName : "python",
+        shortName : "py"
+    },
+    {
+        languageName : "c++",
+        shortName : "cpp"
+    },
+    {
+        languageName : "C",
+        shortName : "C"
+    }
+]
+language.forEach( (item) => {
+   console.log(item.languageName);
+   console.log(item.shortName)
+})
