@@ -68,3 +68,4 @@ console.log(myBook)
 const collection = books.filter( (item) => {
     return item.edition > 2020 && item.publisher ==="NK"
 })
+//this is all about filter and map
