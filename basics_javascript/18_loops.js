@@ -161,4 +161,4 @@ language.forEach( (item) => {
    console.log(item.languageName);
    console.log(item.shortName)
 })
-
+//this is all about loops
