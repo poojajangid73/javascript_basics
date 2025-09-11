@@ -24,7 +24,7 @@ myNums.forEach( (item) => {
     digits.push(item);
     }
 })
-console.log(digits)  //[ 7, 8, 9, 10 ]
+//console.log(digits)  //[ 7, 8, 9, 10 ]
 
 //example=======
 const books = [
@@ -63,9 +63,48 @@ const books = [
 const myBook = books.filter( (obj) => {
     return obj.edition > 2020               
 })
-console.log(myBook)
+//console.log(myBook)
 
 const collection = books.filter( (item) => {
     return item.edition > 2020 && item.publisher ==="NK"
 })
-//this is all about filter and map
+
+const mynumer = [1,2,3,4,5,6,7]
+const newnum = mynumer.map( (num) => { return num + 10})
+console.log(newnum)
+
+//chaining
+const numb = mynumer
+.map( (num) => num * 10)
+.map( (num) => num+1)
+.filter( (num) => num > 30)
+console.log(numb)
+
+//reduce operator
+const total = [1,2,3,4,5]
+const myTotal = total.reduce( function (accumulator,currentvalue) {
+    console.log(`accumulator is ${accumulator} and currentvalue is ${currentvalue}`)
+    return accumulator + currentvalue
+} , 0)
+console.log(myTotal) //15
+
+const bill = [
+    {
+        product : "babykit",
+        price : 1400
+    },
+     {
+        product : "blanket",
+        price : 1000
+    },
+     {
+        product : "wallHanger",
+        price : 500
+    },
+     {
+        product : "fryPan",
+        price : 700
+    }
+]
+const haveToPay = bill.reduce( (accumulator,item) => accumulator+item.price, 0)
+console.log(haveToPay)
